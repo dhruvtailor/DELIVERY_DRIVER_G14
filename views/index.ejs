@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRIVER-DHRUV</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/header-foooter.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans:wght@700&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-container"><%- include('header') %></div>
+
+    <main>
+      <section class="container">
+        <h1>Welcome to driver companion site</h1>
+        <p><span>Driver Name: </span> <%= fullName %></p>
+        <p><span>Vehicle Model: </span> <%= vehicleModel %></p>
+        <p><span>License Plate: </span> <%= licensePlate %></p>
+      </section>
+    </main>
+
+    <div class="footer-container"><%- include('footer') %></div>
+  </body>
+</html>

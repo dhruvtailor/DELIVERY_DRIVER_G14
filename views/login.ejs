@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRIVER-DHRUV</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/header-foooter.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans:wght@700&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-container"><%- include('header-login') %></div>
+
+    <main>
+        <section class="register-login-section">
+            <div class="order-heading">
+                <h1>Login</h1>
+            </div>
+            <div class="containerForm">
+                <form action="/login" method="POST">
+                    <label>User Name</label>
+                    <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        required
+                    /><br /><br />
+
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    /><br /><br />
+                    <% if(error) { %>
+                    <label class="error">Invalid Username or Password..!!</label><br/><br/>
+                    <% } %>
+                    <button type="submit" class="login-btn">Login</button>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="register-login-section">
+            <div class="order-heading">
+                <h1>Register</h1>
+            </div>
+            <div class="containerForm">
+                <form action="/register" method="POST">
+                <label>User Name</label>
+                <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    required
+                /><br /><br />
+
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                /><br /><br />
+
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                /><br /><br />
+
+                <label>Vehicle Model</label>
+                <input
+                    type="text"
+                    id="vehicleModel"
+                    name="vehicleModel"
+                    required
+                /><br /><br />
+
+                <label>Vehicle Color</label>
+                <input
+                    type="text"
+                    id="vehicleColor"
+                    name="vehicleColor"
+                    required
+                /><br /><br />
+
+                <label>License Plate</label>
+                <input
+                    type="text"
+                    id="licensePlate"
+                    name="licensePlate"
+                    required
+                /><br /><br />
+
+                <button type="submit" class="register-btn">Register</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-container"><%- include('footer') %></div>
+  </body>
+</html>

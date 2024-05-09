@@ -1,0 +1,193 @@
+/* =====================================================header starts=========================================== */
+
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 36px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav.left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav.left li {
+  margin-right: 20px;
+}
+
+nav.left a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav.left a:hover {
+  color: #f38080;
+}
+
+.brand {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+
+.brand .logo a {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  letter-spacing: 14px;
+  text-decoration: none;
+}
+
+.brand .logo a:hover {
+  color: #f38080;
+}
+
+/* ============================================header ends======================================================== */
+
+/* ===================================Footer starts============================================================*/
+
+.footer-div {
+  background-color: #2c3e50;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0;
+}
+
+.footer-div .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 8px;
+  color: #f38080;
+}
+
+.footer-div .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 500px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.footer-div .social-icons a {
+  font-size: 36px;
+}
+
+.footer-div .links.row a {
+  font-size: 15px;
+}
+
+.footer-div .row a {
+  text-decoration: none;
+  color: #f38080;
+  transition: 0.5s;
+}
+
+.footer-div .row a:hover {
+  color: #fff;
+}
+
+.footer-div .row ul {
+  width: 100%;
+}
+
+.footer-div .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer-div .copyright {
+  color: #898787;
+}
+
+.footer-div .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+.location-hours {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.location-hours p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ecf0f1;
+}
+
+/* ====================================footer ends================================================================= */
+
+/* ================================================Responsive css starts=============================================== */
+@media only screen and (max-width: 768px) {
+  .header-div,
+  .footer-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav.left {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  nav.left ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.left li {
+    margin: 10px 0;
+  }
+
+  nav.right {
+    margin-top: 20px;
+  }
+
+  .footer-div {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer-div .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer-div .row a i {
+    margin: 0% 3%;
+  }
+
+  .footer-div .social-icons a {
+    font-size: 12px;
+  }
+}
+
+/* ================================================Responsive css ends========================================= */
